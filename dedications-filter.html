@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Dedications from books by African American authors." />
+  <meta name="author" content="Howard Rambsy II" />
+  <meta name="author" content="Jason A. Heppler" />
+  <meta name="author" content="Margaret K. Smith" />
+  <meta name="keywords" content="digital history, digital humanities, digital literature, African American literature, Black literature" />
+  <title>100 Dedications</title>
+
+  <script src="lib/underscore-min.js"></script>
+  <script src="lib/d3.v3.min.js"></script>
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/normalize.min.css"> -->
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/foundation.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <!-- RDFa Metadata (in OpenGraph) -->
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'Changa';
+    src: url('lib/fonts/Changa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Nunito';
+    src: url('lib/fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  :root{--background:#fff;--text:#111;--link:#000;--link-alt:#333;--syn-comment:#999988;--syn-emph:#000;--syn-type:#445588;--syn-error:#a61717;--syn-number:#007f7f;--syn-string:#d01040;--syn-label:#900;--syn-variable:#008080;--syn-oct:#099;--syn-other:#d01040;--type-base:calc(1.6em + 0.5vw);--type-xxx-small:55%;--type-xx-small:65%;--type-x-small:75%;--type-small:85%;--type-medium:90%;--type-large:125%;--type-x-large:150%;--type-xx-large:230%;--type-xxx-large:340%;--mono-font:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;--sans-font:Nunito,-apple-system,BlinkMacSystemFont,'avenir next',avenir,helvetica,'helvetica neue',ubuntu,roboto,noto,'segoe ui',arial,sans-serif}[data-theme=dark]{--background:#111;--text:#eee;--link:#f7f7f7;--link-alt:#f2f2f2;--syn-comment:#999988;--syn-emph:#fff;--syn-type:#79f;--syn-error:#faf;--syn-number:#5fc;--syn-string:#f05;--syn-label:#f66;--syn-variable:#0f4;--syn-oct:#3ff;--syn-other:#f69}#darkModeToggle{position:absolute;left:-16px;top:5px;background:0 0;border:none;padding:0;margin:0;cursor:pointer}#darkModeToggle:focus{outline:0}#darkModeToggle svg{background:var(--background);fill:var(--text)}body[data-theme=dark] svg{background:#fff;color:#222}body{background-color:var(--background);color:var(--text);margin:30px auto;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;font-size:1rem;font-family:var(--sans-font)}.only-print{display:none}a{color:var(--link);text-decoration-skip-ink:auto;text-decoration:underline}a:visited{color:var(--link-alt)}ul{margin:1rem 0}ul ul{margin:0}.small,small{font-size:14px}h1 a{color:var(--link)}em{font-style:italic}h1{margin-bottom:.5rem;line-height:1.25;font-weight:600;font-size:32px;letter-spacing:.004em}h2{margin-bottom:.5rem;line-height:1.25;font-weight:600;font-size:1.5rem;letter-spacing:.009em}h3{margin-bottom:.5rem;line-height:1.25;font-weight:600;font-size:1.25rem;letter-spacing:.009em}h4{margin-bottom:.5rem;line-height:1.25;font-weight:600;font-size:1rem}h5{margin-bottom:.5rem;line-height:1.25;font-weight:600;font-size:.875rem}::-webkit-details-marker{display:none}.body th{text-align:left}.body th{padding:.5rem}.limiter{max-width:640px;padding-left:20px;padding-right:20px;margin-left:auto;margin-right:auto}.pad1{padding:10px}.pad0x{padding-left:0;padding-right:0}.pad1y{padding-top:10px;padding-bottom:10px}.pad2y{padding-top:20px;padding-bottom:20px}.update{background:#fffceb;padding:1rem 1rem 0 1rem;border:1px solid #fbf1a9;border-radius:2px}@media screen and (max-width:1024px){.header-wrap{border-bottom:1px solid var(--text);padding-bottom:20px}}@media screen and (min-width:1025px){.header{position:absolute;top:55px;right:50%;margin-right:340px!important;letter-spacing:-.009em}.content h1:first-child{margin-top:0}}@media print{.no-print{display:none}.only-print{display:block}body{margin:0}.limiter{max-width:100%!important;margin:0!important;padding:0!important}}.code,li code{font-family:var(--mono-font)}.m{color:var(--syn-number)}.s{color:var(--syn-string)}.no{color:var(--syn-label)}.k{color:var(--syn-variable)}.s1,.s2{color:var(--syn-other)}body{display:block;color:var(--text);background:var(--background);margin:40px auto;width:800px;font-family:var(--sans-font)}h1{font-family:"Fira Sans",sans-serif;font-size:var(--type-xx-large)}.title{font-family: Changa, var(--sans-font);background:var(--text);color:#fff;padding:3px}.notes{font-size:var(--type-small);color:var(--syn-type);padding-top:15px}text.dedication_text{font-size:var(--type-large)}text.dedication_source{font-size:var(--type-large);font-weight:800;color:rgb(255 61 61)!important}hr{display:block;height:1px;border:0;border-top:2px solid var(--syn-type);margin:1em 0;padding:0;clear:both}
+  button {font-size: var(--type-large); background-color: var(--background); border: 2px solid var(--link); color: var(--link);}
+  button:hover {background-color: var(--link); border: 2px solid var(--link); color: var(--background);}
+  </style>
+
+  <script defer data-domain="whatisdigitalhumanities.com" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+<body data-theme>
+
+  <h1><span class="title">100 Dedications</span></h1>
+
+  <div id="content">
+    <button id="update_dedication">New dedication</button>
+    <p id="dedication_text"></p><br>
+    <p id="dedication_source"></p>
+
+    <h2>New dedication by a...</h2>
+    <button id="male_dedication" style="padding:10px; margin:10px">Man</button><br>
+    <button id="female_dedication" style="padding:10px; margin:10px">Woman</button><br>
+    <button id="twenty_auth" style="padding:10px; margin:10px">20th c. author</button><br>
+    <button id="twentyOne_auth" style="padding:10px; margin:10px">21st c. author</button>
+
+    <hr>
+
+    <p class="notes"><strong>NB</strong>: Click the <span style="border-bottom: 1px solid #000;">New dedication</span> button above the quote to display a new random dedication. Use the buttons below the quote to display a quote from a filtered data set. This project is based on "What is Digital Humanities?" by Jason Heppler. This version uses a dataset compiled by <a href="https://www.siue.edu/artsandsciences/english/faculty-staff/rambsy.shtml">Howard Rambsy II</a> and was coded by <a href="www.margaretksmith.com">Margaret K. Smith</a>. The code and data for the original project are available <a href="http://github.com/hepplerj/whatisdigitalhumanities">here</a>, and the code for this iteration is available <a href="https://github.com/IRISSIUE/dedications">here</a>.</p>
+
+  </div>
+
+  <script>
+  d3.csv("dedications4.csv", (error, dedications) => {
+    if (error) throw error;
+    
+    // Grab random line from CSV
+    randomDedication = _.sample(dedications, 1);
+
+    // Result to DOM
+    const svg = d3.select("#dedication_text");
+
+    const texts = svg.selectAll("text")
+      .data(randomDedication)
+      .enter();
+
+    texts.append("text")
+      .attr("class", "dedication_text")
+      .text(d => d.dedication );
+
+    texts.append("text")
+      .attr("class", "dedication_source")
+      .html(d => "<br>" + d.auth + ', <i>' + d.title + '</i>');
+    
+    // Update the quote when the `update_quote` button is clicked
+    d3.select("#update_dedication").on("click", () => {
+      randomDedication = _.sample(dedications, 1);
+      d3.select(".dedication_text").text(d => randomDedication[0].dedication);
+      d3.select(".dedication_source").html(d => "<br>" + randomDedication[0].auth + ', <i>' + randomDedication[0].title + '</i>');
+    });
+    
+    var male = dedications.filter(function(d){ return d.auth_gen == "Man" })
+    
+    d3.select("#male_dedication").on("click", () => {
+        maleDedication = _.sample(male, 1);
+        d3.select(".dedication_text").text(d => maleDedication[0].dedication);
+        d3.select(".dedication_source").html(d => "<br>" + maleDedication[0].auth + ', <i>' + maleDedication[0].title + '</i>');
+    });
+
+    var female = dedications.filter(function(d){ return d.auth_gen == "Woman" })
+
+    d3.select("#female_dedication").on("click", () => { 
+        femaleDedication = _.sample(female, 1);
+        d3.select(".dedication_text").text(d => femaleDedication[0].dedication);
+        d3.select(".dedication_source").html(d => "<br>" + femaleDedication[0].auth + ', <i>' + femaleDedication[0].title + '</i>');
+    });
+
+    var twenty = dedications.filter(function(d){ return d.cen == "20th century" })
+
+d3.select("#twenty_auth").on("click", () => { 
+    twentyDed = _.sample(twenty, 1);
+    d3.select(".dedication_text").text(d => twentyDed[0].dedication);
+    d3.select(".dedication_source").html(d => "<br>" + twentyDed[0].auth + ', <i>' + twentyDed[0].title + '</i>');
+});
+
+var twentyOne = dedications.filter(function(d){ return d.cen == "21st century" })
+
+d3.select("#twentyOne_auth").on("click", () => { 
+    twentyOneDed = _.sample(twentyOne, 1);
+    d3.select(".dedication_text").text(d => twentyOneDed[0].dedication);
+    d3.select(".dedication_source").html(d => "<br>" + twentyOneDed[0].auth + ', <i>' + twentyOneDed[0].title + '</i>');
+});
+
+  });
+  </script>
+</body>
+</html>
